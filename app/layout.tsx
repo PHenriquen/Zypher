@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: "%s — Zypher",
   },
   description:
-    "A Zypher é uma empresa de tecnologia em formação, criando software, sistemas inteligentes, hardware e experiências interativas.",
+    "Zypher é meu portfólio de software, IA, sistemas embarcados e projetos interativos, com protótipos e estudos em diferentes estágios.",
 };
 
 const themeBoot = `
