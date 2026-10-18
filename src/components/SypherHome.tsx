@@ -32,10 +32,10 @@ function Header() {
           <span><strong>ZYPHER</strong><small>Tecnologia · Engenharia · Pesquisa</small></span>
         </Link>
         <nav aria-label="Navegação principal">
-          <a href="#divisoes">Divisões</a>
+          <a href="#divisoes">Áreas</a>
           <a href="#projetos">Projetos</a>
           <Link href="/brand">Marca</Link>
-          <Link href="/founder">Fundador</Link>
+          <Link href="/founder">Sobre</Link>
         </nav>
         <ThemeToggle />
       </div>
@@ -50,9 +50,9 @@ function Hero() {
       <div className="sy-hero-glow" aria-hidden="true" />
       <div className="sy-shell sy-hero-layout">
         <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .8, ease: [0.16, 1, 0.3, 1] }} className="sy-hero-copy">
-          <p className="sy-kicker"><span /> Empresa independente de tecnologia</p>
+          <p className="sy-kicker"><span /> Portfólio de engenharia e tecnologia</p>
           <h1>Tecnologia com<br /><em>visão própria.</em></h1>
-          <p className="sy-hero-lede">Uma empresa de tecnologia em formação. Software, inteligência e engenharia conectando ideias ao mundo físico.</p>
+          <p className="sy-hero-lede">Projetos autorais em software, inteligência artificial e engenharia, da ideia aos protótipos verificáveis.</p>
           <div className="sy-hero-actions">
             <a className="sy-btn primary" href="#projetos">Explorar projetos <HiArrowDownRight /></a>
             <Link className="sy-btn secondary" href="/brand">Sistema de marca</Link>
@@ -87,8 +87,8 @@ function Divisions() {
     <section className="sy-section" id="divisoes">
       <div className="sy-shell">
         <motion.div {...reveal} className="sy-section-head">
-          <div><p className="sy-kicker"><span /> 01 / Divisões</p><h2>Uma empresa.<br />Seis universos.</h2></div>
-          <p>Da pesquisa ao produto, cada divisão explora uma parte do mesmo horizonte tecnológico.</p>
+          <div><p className="sy-kicker"><span /> 01 / Áreas</p><h2>Diversas áreas.<br />Uma direção.</h2></div>
+          <p>Áreas de estudo e criação que organizam meus projetos. Elas não representam empresas ou equipes independentes.</p>
         </motion.div>
 
         <div className="sy-division-grid">
@@ -151,9 +151,9 @@ function IdentityPreview() {
     <section className="sy-section sy-identity-section">
       <div className="sy-shell sy-identity-layout">
         <motion.div {...reveal} className="sy-identity-copy">
-          <p className="sy-kicker"><span /> 03 / Sistema visual</p>
+          <p className="sy-kicker"><span /> 03 / Identidade visual</p>
           <h2>Os símbolos não são decoração.</h2>
-          <p>Intelligence, Interactive, Labs e Products já têm linguagens visuais próprias. Systems e Engineering seguem a mesma lógica de autonomia sem quebrar a família.</p>
+          <p>Cada área possui uma linguagem visual para explorar diferentes tipos de projeto. Esses nomes organizam o portfólio, não divisões corporativas.</p>
           <Link href="/brand" className="sy-text-link">Ver sistema completo <HiArrowUpRight /></Link>
         </motion.div>
         <div className="sy-identity-board">
@@ -176,7 +176,7 @@ function Closing() {
     <section className="sy-closing">
       <div className="sy-shell sy-closing-layout">
         <div><p className="sy-kicker"><span /> 04 / Direção</p><h2>Começar por software.<br /><em>Ganhar o direito de expandir.</em></h2></div>
-        <div className="sy-closing-actions"><Link href="/founder">Fundador <HiArrowUpRight /></Link><Link href="/after-hours">After Hours <HiArrowUpRight /></Link></div>
+        <div className="sy-closing-actions"><Link href="/founder">Sobre <HiArrowUpRight /></Link><Link href="/after-hours">After Hours <HiArrowUpRight /></Link></div>
       </div>
       <div className="sy-shell sy-footer-line"><span>ZYPHER</span><span>Tecnologia · Engenharia · Pesquisa</span><span>Construída para evoluir.</span></div>
     </section>

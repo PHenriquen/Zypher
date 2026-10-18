@@ -12,14 +12,14 @@ export function SiteFooter() {
             <span>ZYPHER</span>
           </div>
           <p>Tecnologia, engenharia e pesquisa aplicada construídas em torno de produtos próprios.</p>
-          <span className="footer-v3-status"><i /> Empresa em formação</span>
+          <span className="footer-v3-status"><i /> Portfólio em evolução</span>
         </div>
 
         <div className="footer-v3-groups">
           <div>
-            <span className="footer-v3-label">Empresa</span>
+            <span className="footer-v3-label">Explorar</span>
             <Link href="/brand">Sistema de marca</Link>
-            <Link href="/founder">Fundador</Link>
+            <Link href="/founder">Sobre</Link>
             <Link href="/after-hours">After Hours</Link>
           </div>
           <div>

@@ -21,7 +21,7 @@ export default function FounderPage() {
         <div className="detail-hero-grid founder-grid">
           <div>
             <h1>Pedro Nogueira</h1>
-            <p>A Sypher é a identidade da empresa. Esta página conecta portfólio profissional, código e presença de carreira sem transformar o site corporativo em um perfil pessoal.</p>
+            <p>Zypher é a identidade visual do meu trabalho em tecnologia. Aqui reúno meu portfólio, código e trajetória profissional.</p>
             <div className="hero-actions">
               {professionalLinks.map((link, index) => (
                 <a className={`button ${index === 0 ? "primary" : "secondary"}`} href={link.href} key={link.label} target="_blank" rel="noreferrer">
@@ -37,8 +37,8 @@ export default function FounderPage() {
 
       <section className="section shell founder-boundary">
         <div><p className="section-index">Profissional</p><h2>Portfólio</h2><p>Carreira, habilidades técnicas, formação e trabalho profissional individual pertencem ao portfólio pessoal.</p></div>
-        <div><p className="section-index">Empresa</p><h2>Sypher</h2><p>Divisões, produtos, pesquisa da empresa e a arquitetura de longo prazo pertencem aqui.</p></div>
-        <div><p className="section-index">Pessoal</p><h2>After Hours</h2><p>Desenhos, streaming, jogos e experimentos de conteúdo são hobbies pessoais e não produtos da empresa.</p></div>
+        <div><p className="section-index">Zypher</p><h2>Projetos</h2><p>Protótipos, produtos e estudos em software, IA e engenharia se organizam por áreas técnicas aqui.</p></div>
+        <div><p className="section-index">Pessoal</p><h2>After Hours</h2><p>Desenhos, streaming, jogos e experimentos de conteúdo são hobbies pessoais e não produtos profissionais de software.</p></div>
       </section>
       <SiteFooter />
     </main>
