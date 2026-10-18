@@ -38,7 +38,11 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             <p className="world-role">{project.tagline}</p>
             <p className="world-description">{project.description}</p>
             <div className="project-actions">
-              <a className="project-primary" href={project.href} target="_blank" rel="noreferrer">Abrir repositório ↗</a>
+              {project.repositoryPrivate ? (
+                <span className="project-primary" title="Código-fonte ainda não publicado">Código privado · Em desenvolvimento</span>
+              ) : (
+                <a className="project-primary" href={project.href} target="_blank" rel="noreferrer">Abrir repositório ↗</a>
+              )}
               <Link className="project-secondary" href={`/divisions/${division.slug}`}>Ver Zypher {division.name}</Link>
             </div>
           </div>
@@ -55,12 +59,12 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
       <section className="world-section">
         <div className="world-shell">
           <div className="world-section-head">
-            <span className="world-index">01 / Linhagem</span>
-            <div><h2>{project.name} pertence à Zypher {division.name}.</h2><p>O projeto mantém sua própria marca e voz. A divisão funciona como origem técnica, linguagem de apresentação e endosso dentro do ecossistema Zypher.</p></div>
+            <span className="world-index">01 / Contexto</span>
+            <div><h2>{project.name} / {division.name}</h2><p>Esta área organiza o portfólio por afinidade técnica. Cada projeto possui escopo e estágio de desenvolvimento próprios.</p></div>
           </div>
           <div className="world-identity-grid">
-            <article className="world-identity-card"><small>Status</small><strong>{project.status}</strong><p>Estado atual do desenvolvimento apresentado publicamente pela Zypher.</p></article>
-            <article className="world-identity-card"><small>Categoria</small><strong>{project.category}</strong><p>Divisão: Zypher {division.name}</p><div className="world-swatch" /></article>
+            <article className="world-identity-card"><small>Status</small><strong>{project.status}</strong><p>Status documentado do projeto, sujeito a validação técnica.</p></article>
+            <article className="world-identity-card"><small>Categoria</small><strong>{project.category}</strong><p>Área: {division.name}</p><div className="world-swatch" /></article>
           </div>
         </div>
       </section>
@@ -68,12 +72,12 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
       <section className="world-section">
         <div className="world-shell">
           <div className="world-section-head">
-            <span className="world-index">02 / Direção</span>
-            <div><h2>Produto próprio, contexto próprio.</h2><p>A Zypher não transforma todos os projetos em clones da marca-mãe. Cada produto pode construir uma identidade mais expressiva desde que sua relação com a divisão permaneça clara.</p></div>
+            <span className="world-index">02 / Princípios</span>
+            <div><h2>Objetivo claro, progresso verificável.</h2><p>Cada projeto deve comunicar o que já foi construído, o que ainda está planejado e quais problemas técnicos pretende resolver.</p></div>
           </div>
           <div className="world-principles">
             <article className="world-principle"><span>01</span><h3>Identidade autônoma</h3><p>O projeto precisa continuar reconhecível mesmo quando o nome Zypher não aparece ao lado.</p></article>
-            <article className="world-principle"><span>02</span><h3>Linhagem técnica</h3><p>A divisão comunica a disciplina, o padrão de construção e o tipo de problema que o projeto explora.</p></article>
+            <article className="world-principle"><span>02</span><h3>Linhagem técnica</h3><p>A área destaca as competências e o tipo de problema que o projeto explora.</p></article>
             <article className="world-principle"><span>03</span><h3>Evolução pública</h3><p>Status e escopo devem refletir o estágio real do projeto, sem fingir maturidade que ainda não existe.</p></article>
           </div>
         </div>
@@ -81,7 +85,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
       <div className="world-shell world-next">
         <Link href="/#projetos">← Todos os projetos</Link>
-        <a href={project.href} target="_blank" rel="noreferrer">GitHub →</a>
+        {!project.repositoryPrivate && <a href={project.href} target="_blank" rel="noreferrer">GitHub →</a>}
       </div>
       <SiteFooter />
     </main>
