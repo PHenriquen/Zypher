@@ -22,6 +22,7 @@ export type Project = {
   description: string;
   status: string;
   href: string;
+  repositoryPrivate?: boolean;
   mark: string;
   accent: string;
 };
@@ -31,9 +32,9 @@ export const company = {
   strapline: "Tecnologia · Engenharia · Pesquisa",
   headline: "Construir sistemas. Criar produtos. Explorar além do software.",
   description:
-    "A Zypher é uma empresa de tecnologia em formação, construída em torno de produtos próprios, pesquisa aplicada e da conexão entre software e o mundo físico.",
+    "Zypher é uma identidade pessoal de portfólio e experimentação em software, IA, hardware e experiências interativas.",
   principle:
-    "Uma marca-mãe. Disciplinas distintas. Cada produto mantém sua personalidade enquanto herda um padrão comum de engenharia, clareza e experimentação.",
+    "Uma identidade visual compartilhada. Cada projeto mantém personalidade própria, estágio real e objetivos verificáveis.",
 };
 
 export const founderLinks = {
@@ -139,67 +140,72 @@ export const divisions: Division[] = [
 
 export const projects: Project[] = [
   {
+    // Legacy route slug preserved to avoid breaking existing links.
     slug: "illume",
-    name: "ILLume",
+    name: "LUMI",
     divisionSlug: "intelligence",
     category: "Assistente de IA",
-    tagline: "Uma inteligência local que vive com o computador em vez de ficar presa a uma aba do navegador.",
+    tagline: "IA local para Windows, voz, documentos e ações com permissões.",
     description:
-      "Assistente local-first para Windows explorando voz, contexto, documentos, automação nativa controlada, permissões e modelos locais.",
-    status: "Em desenvolvimento",
-    href: "https://github.com/PHenriquen/Illume",
+      "Assistente desktop em desenvolvimento com Electron, TypeScript, Python, SQLite e Ollama. Inclui conversação local e integrações controladas com o computador.",
+    status: "Em desenvolvimento · Código privado",
+    href: "https://github.com/PHenriquen/Lumi-IA",
+    repositoryPrivate: true,
     mark: "/brand/projects/illume.svg",
     accent: "#00D6FF",
   },
   {
     slug: "nodi",
-    name: "Nodi",
+    name: "SyncHub",
     divisionSlug: "products",
-    category: "SaaS",
-    tagline: "Guardar o contexto e a evolução por trás do trabalho, não só a lista de tarefas.",
+    category: "SaaS / Backend",
+    tagline: "Rastreabilidade entre tarefas, commits e entregas do GitHub.",
     description:
-      "Workspace de projetos centrado em decisões, marcos, referências, histórico e narrativa pública do projeto.",
-    status: "MVP",
-    href: "https://github.com/PHenriquen/Nodi",
+      "Protótipo local com NestJS, Next.js, webhooks assinados, deduplicação de eventos e histórico de sincronização. Produto SaaS e cliente mobile são planos futuros.",
+    status: "Protótipo local · Código privado",
+    href: "https://github.com/PHenriquen/SyncHub",
+    repositoryPrivate: true,
     mark: "/brand/projects/nodi.svg",
     accent: "#00C896",
   },
   {
     slug: "sincrohub",
-    name: "SincroHub",
+    name: "S.V.I. 4.0",
     divisionSlug: "systems",
-    category: "Plataforma industrial",
-    tagline: "Sinais operacionais viram estado, incidentes e ação.",
+    category: "IoT / Monitoramento industrial",
+    tagline: "Sensores, ESP32 e telemetria apresentados em um sistema supervisório.",
     description:
-      "Plataforma de operações industriais para telemetria, monitoramento, regras, incidentes, integração e visibilidade técnica em tempo real.",
-    status: "Em desenvolvimento",
-    href: "https://github.com/PHenriquen/SincroHub",
+      "Protótipo de bancada para supervisão industrial com FastAPI, painel web, leituras por USB/Serial, histórico e simulação de sensores.",
+    status: "Protótipo · Código privado",
+    href: "https://github.com/PHenriquen/S.V.I",
+    repositoryPrivate: true,
     mark: "/brand/projects/sincrohub.svg",
     accent: "#3F73FF",
   },
   {
     slug: "manopla",
-    name: "DEXTR",
+    name: "Manopla Inteligente",
     divisionSlug: "engineering",
-    category: "Wearable / Embarcados",
-    tagline: "Uma interface física de controle construída com firmware embarcado, mecânica e interação.",
+    category: "Embarcados / Mecatrônica",
+    tagline: "Firmware, telemetria e laboratório 3D para um wearable experimental.",
     description:
-      "Nome de trabalho do protótipo atual da Manopla Inteligente: um conceito de wearable baseado em ESP32, combinando firmware embarcado, protocolo serial binário, mecânica digital e futura validação física.",
-    status: "Nome provisório · Protótipo",
+      "Prototipação digital com ESP32, protocolo serial, modelo OpenSCAD e interface 3D interativa. Montagem e validação física ainda em desenvolvimento.",
+    status: "Protótipo digital",
     href: "https://github.com/PHenriquen/Manopla-Inteligente",
     mark: "/brand/projects/manopla.svg",
     accent: "#E99A55",
   },
   {
     slug: "ecos-do-tempo",
-    name: "Ecos do Tempo",
+    name: "Ressonância Zero",
     divisionSlug: "interactive",
-    category: "Jogo",
-    tagline: "Uma experiência 2D pequena, atmosférica e feita para chegar ao fim.",
+    category: "Jogo 2D",
+    tagline: "Ritmo, ondas, builds e poderes em partidas para superar a própria pontuação.",
     description:
-      "Primeiro jogo autoral do ecossistema, em pré-produção, com escopo deliberadamente compacto, foco em atmosfera, gameplay essencial e narrativa ambiental opcional.",
-    status: "Pré-produção",
-    href: "https://github.com/PHenriquen/Noah",
+      "Jogo autoral em pré-produção com Noah e Rin. A proposta prioriza combate, movimento, invocações e cartas de evolução antes de expandir conteúdo.",
+    status: "Pré-produção · Código privado",
+    href: "https://github.com/PHenriquen/Ressonancia-Zero",
+    repositoryPrivate: true,
     mark: "/brand/projects/requiem.svg",
     accent: "#C64659",
   },
