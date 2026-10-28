@@ -12,8 +12,8 @@ Zypher is a personal portfolio and experimental design identity, **not** a regis
 
 | Project | Area | Current positioning |
 |---|---|---|
-| **LUMI** | AI / desktop | Local Windows assistant; formerly ILLume |
-| **SyncHub** | SaaS / backend | GitHub project traceability, currently local |
+| **LUMI** | AI / desktop | Local Windows assistant; formerly ILLUME |
+| **SYGNAL** | SaaS / backend | GitHub project traceability, currently local |
 | **S.V.I. 4.0** | Industry 4.0 | ESP32 + FastAPI monitoring prototype |
 | **Elume Achados** | Web / real client | Affiliate storefront; admin panel planned |
 | **Ressonância Zero** | Game development | 2D action game in pre-production |
@@ -21,7 +21,7 @@ Zypher is a personal portfolio and experimental design identity, **not** a regis
 | **AEGIS, ApexOS, OmniData** | Security / cloud / data | Future concepts, not implemented products |
 | **Visor Arc, Garra Arc, Mark I** | Physical computing | Planned hardware prototypes |
 
-Some UI components or branding documents may still reference older project names such as ILLume, Nodi, SincroHub or Ecos do Tempo. These are legacy references to be corrected incrementally without breaking existing functionality.
+Some UI components or branding documents may still reference older project names such as ILLUME, Nodi, SYGNAL or Ecos do Tempo. These are legacy references to be corrected incrementally without breaking existing functionality.
 
 ## Identity system
 

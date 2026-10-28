@@ -140,14 +140,14 @@ export const divisions: Division[] = [
 export const projects: Project[] = [
   {
     slug: "illume",
-    name: "ILLume",
+    name: "ILLUME",
     divisionSlug: "intelligence",
     category: "Assistente de IA",
     tagline: "Uma inteligência local que vive com o computador em vez de ficar presa a uma aba do navegador.",
     description:
       "Assistente local-first para Windows explorando voz, contexto, documentos, automação nativa controlada, permissões e modelos locais.",
     status: "Em desenvolvimento",
-    href: "https://github.com/PHenriquen/Illume",
+    href: "https://github.com/PHenriquen/Lumi-IA",
     mark: "/brand/projects/illume.svg",
     accent: "#00D6FF",
   },
@@ -166,14 +166,14 @@ export const projects: Project[] = [
   },
   {
     slug: "sincrohub",
-    name: "SincroHub",
+    name: "SYGNAL",
     divisionSlug: "systems",
-    category: "Plataforma industrial",
-    tagline: "Sinais operacionais viram estado, incidentes e ação.",
+    category: "SaaS / Operações",
+    tagline: "Clareza para acompanhar tarefas, atividade GitHub e entregas.",
     description:
-      "Plataforma de operações industriais para telemetria, monitoramento, regras, incidentes, integração e visibilidade técnica em tempo real.",
+      "Aplicação local de rastreabilidade de entregas, com evolução planejada para SaaS e uma prévia interativa no navegador.",
     status: "Em desenvolvimento",
-    href: "https://github.com/PHenriquen/SincroHub",
+    href: "https://github.com/PHenriquen/SyncHub",
     mark: "/brand/projects/sincrohub.svg",
     accent: "#3F73FF",
   },

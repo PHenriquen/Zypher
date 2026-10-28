@@ -21,7 +21,7 @@ Zypher is the parent brand. It should stay broad enough to support products acro
 
 - **Illume** → Zypher Intelligence
 - **Nodi** → Zypher Products
-- **SincroHub** → Zypher Systems
+- **SYGNAL** → Zypher Systems
 - **Manopla Inteligente** → Zypher Engineering
 - **Réquiem** → Zypher Interactive
 - Early concepts and uncommitted experiments → Zypher Labs
